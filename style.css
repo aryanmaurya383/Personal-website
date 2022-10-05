@@ -410,28 +410,29 @@ header {
     position: absolute;
     top: 0;
     left: 0;
-    height: 1rem;
-    width: 1rem;
+    height: 0.8rem;
+    width: 0.8rem;
     pointer-events: none;
-    background: #6a0ad7;
+    background: #8b4bd4;
     transform: translate(-50%, -50%);
     border-radius: 50%;
     z-index: 10000;
 }
 
 .cursor-1.active {
-    height: 3rem;
-    width: 3rem;
+    height: 2rem;
+    width: 2rem;
     opacity: 0.3;
+    background: #000;
 }
 
 .cursor-2 {
     position: absolute;
     top: 0;
     left: 0;
-    height: 2rem;
-    width: 2rem;
-    border: 0.1rem solid #ffc60d;
+    height: 1.5rem;
+    width: 1.5rem;
+    border: 0.1rem solid #000;
     pointer-events: none;
     transform: translate(-50%, -50%);
     border-radius: 50%;
@@ -486,6 +487,8 @@ header {
 }
 
 @media(max-width:1071px) {
+
+
     .menu-button {
         display: block;
         margin: 0;
@@ -560,6 +563,10 @@ header {
 }
 
 @media(max-width:812px) {
+    * {
+        cursor: auto;
+    }
+
     .menu-button {
         display: block;
         margin: 0;
@@ -630,6 +637,9 @@ header {
 }
 
 @media(max-width:626px) {
+    * {
+        cursor: auto;
+    }
 
     .cursor-1,
     .cursor-2 {
@@ -771,4 +781,18 @@ header {
     .footer-heading h3 {
         font-size: 7vw !important;
     }
+}
+
+/* Resume */
+.resume-body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.resume-body embed {
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
